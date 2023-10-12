@@ -16,6 +16,3 @@ submit = form.form_submit_button('Cari sentimennya!')
 if submit:
     y_pred = trained_model.predict([kalimat])
     st.write('Sentimen dari kalimat tersebut: ', y_pred[0])
-
-# ngrok_tunnel = ngrok.connect(8501)
-# print('Public URL:', ngrok_tunnel.public_url)
